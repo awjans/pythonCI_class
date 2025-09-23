@@ -9,8 +9,10 @@ class PrimesTestCase(unittest.TestCase):
      self.assertFalse(is_prime('foo'))
 
    def test_if_one_prime(self):
-     self.assertTrue(is_prime(1))
+     self.assertFalse(is_prime(1))
 
+   def test_of_neg_one_prime(self):
+	 self.assertFalse(is_prime(-1))
    
 
    
